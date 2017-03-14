@@ -1,0 +1,1293 @@
+/****************************************************
+ *  FONTS
+ ***************************************************/
+
+@font-face {
+    font-family: 'ds-digital';
+    src: url('./fonts/ds-digit-webfont.eot');
+    src: url('./fonts/ds-digit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ds-digit-webfont.woff2') format('woff2'),
+         url('./fonts/ds-digit-webfont.woff') format('woff'),
+         url('./fonts/ds-digit-webfont.ttf') format('truetype'),
+         url('./fonts/ds-digit-webfont.svg#ds-digitalbold_italic') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+
+/****************************************************
+ *  SECTIONS
+ ***************************************************/
+
+.blocker {
+  position: absolute;
+  background: transparent;
+  z-index: 10000;
+  height: 40px;
+  width: 40px;
+  left: 70px;
+  top: 71px;
+}
+
+.minute-hand {
+    cursor: -webkit-grab; cursor: -moz-grab; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+
+section.reactivo .actividad {
+    
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+
+    position: absolute;
+    height: 373px;
+    width: 790px;
+    bottom: 46px;
+    left: 0;
+
+    font-family: 'Nexa Regular', sans-serif;
+    color:white;
+}
+
+/*
+.btn-siguiente {
+    background-image: url('./img/btn-bg.png');
+    font-family: 'Nexa Regular', sans-serif;
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    text-transform: lowercase;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+    color: #1C180B;
+
+    position: absolute;
+    padding: 5px 10px;
+    z-index: 5000;
+    height: 24px;
+    bottom: 20px;
+    width: 90px;
+    right: 20px;
+}
+*/
+
+/****************************************************
+ *  REACTIVO 01
+ ***************************************************/
+
+section.reactivo.react01 .actividad {
+    background-image: url('./img/react01/bg.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+.react01 .actividad .section-bg {
+    background-image: url('./img/react01/cogs.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 740.5px;
+    height: 358px;
+    z-index: 0;
+    left: 30px;
+    top: 10px;
+}
+
+.react01 .actividad .contenedor {
+    background-image: url('./img/react01/contenedor.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 371px;
+    width: 325px;
+    bottom: -1px;
+    z-index: 10;
+    left: 240px;
+}
+
+
+.react01 .actividad .bg img {
+    float: left;
+    width: 100%;
+}
+
+
+.react01 .info-01 {
+    position: absolute;
+    height: auto;
+    width: 184px;
+    left: 20px;
+    top: 40px;  
+}
+
+.react01 .info-01:after {
+    content: "";
+    background-image: url('./img/react01/derecha.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 110px;
+    height: 19px;
+    z-index: 100;
+    left: 100px;
+    top: 62px;
+}
+
+.react01 .info-02 {
+    position: absolute;
+    height: auto;
+    width: 170px;
+    top: 160px;  
+    right: 30px;
+}
+
+.react01 .info-03 {
+    position: absolute;
+    text-align: left;
+    height: auto;
+    width: 207px;
+    left: 20px;
+    bottom: 30px;  
+}
+
+.react01 .info-03:after {
+    content: "";
+    background-image: url('./img/react01/derecha.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 110px;
+    height: 17px;
+    z-index: 100;
+    left: 100px;
+    bottom: -17px;
+}
+
+.react01 .analog-clock {
+    margin-left: -125px;
+    position: absolute;
+    height: 219px;
+    width: 219px;
+    z-index: 800;
+    left: 405px;
+    top: 55px;
+}
+
+.react01 .analog-clock .bg {
+    background-color: transparent;
+    position: absolute;
+    height: 219px;
+    width: 219px;    
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+.react01 .analog-clock .mark {
+    background-image: url('./img/react01/mark.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    height: 166px;
+    width: 165px;    
+    z-index: 525;
+    left: 33px;
+    top: 23px;    
+}
+.react01 .analog-clock .hour-hand {
+    background-image: url('./img/react01/hour-hand.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    z-index: 550;
+    height: 56px;
+    width: 74px;    
+    left: 104px;
+    top: 62px;    
+}
+.react01 .analog-clock .minute-hand {
+    background-image: url('./img/react01/minute-hand.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    cursor: pointer;
+    z-index: 555;
+    height: 42px;
+    width: 56px;    
+    left: 69px;
+    top: 76px;    
+}
+
+.react01 .digital-clock {
+    background-color: transparent;    
+    margin-left: -100px;
+    position: absolute;
+    height: 85px;
+    width: 200px;    
+    z-index: 600;
+    bottom: 5px; 
+    left: 50%;
+}
+
+.react01 .digital-clock .time {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    text-align: center;
+    font-size: 80px;
+    cursor: pointer;
+    padding: 0;
+}
+
+.react01 .analog-clock .mark:hover, .react01 .analog-clock .mark.hover {
+    background-image: url('./img/react01/mark-glow.png');
+}
+.react01 .analog-clock .hour-hand:hover, .react01 .analog-clock .hour-hand.hover {
+    background-image: url('./img/react01/hour-hand-glow.png');
+}
+.react01 .analog-clock .minute-hand:hover, .react01 .analog-clock .minute-hand.hover {
+    background-image: url('./img/react01/minute-hand-glow.png');
+}
+.react01 .digital-clock .hours:hover, .react01 .digital-clock .hours.hover {
+    text-shadow: 0px 0px 10px #ffffbe;
+}
+.react01 .digital-clock .minutes:hover, .react01 .digital-clock .minutes.hover {
+    text-shadow: 0px 0px 10px #ffffbe;
+}
+
+/****************************************************
+ *  REACTIVO 02
+ ***************************************************/
+
+.react02 {
+
+}
+
+.react02 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 85px;
+    top: 10px;
+}
+
+.react02 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react02 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 80px;
+    top: -2px;
+}
+
+.react02 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 44px;
+    top: 153px;
+}
+
+.react02 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react02 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react02 .digital-clock {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    right: 146px;
+    bottom: 94px;
+    color: white;
+    position: absolute; 
+}
+
+.react02 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react02 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 03
+ ***************************************************/
+
+.react03 {
+
+}
+
+.react03 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 85px;
+    top: 10px;
+}
+
+.react03 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react03 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 162px;
+    top: 78px;
+}
+
+.react03 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 42px;
+    top: 152px;
+}
+
+.react03 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react03 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react03 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 40px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    right: 146px;
+    bottom: 94px;
+    color: white;
+    position: absolute; 
+}
+
+.react03 .digital-clock.two {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    right: 91px;
+    bottom: 70px;
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+.react03 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react03 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+/****************************************************
+ *  REACTIVO 04
+ ***************************************************/
+
+.react04 {
+
+}
+
+.react04 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 85px;
+    top: 10px;
+}
+
+.react04 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react04 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 82px;
+    top: 161px;
+}
+
+.react04 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 43px;
+    top: 152px;
+}
+
+.react04 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react04 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react04 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 30px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    right: 91px;
+    bottom: 70px;
+    color: white;
+    position: absolute;
+}
+
+.react04 .digital-clock.two {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 14px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 118px;
+    bottom: 137px;
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+.react04 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react04 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 05
+ ***************************************************/
+
+.react05 {
+
+}
+
+.react05 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 85px;
+    top: 10px;
+}
+
+.react05 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react05 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 79px;
+    top: -3px;
+}
+
+.react05 .analog-clock .indicador02{
+
+background-image: url('./img/indicador02.png');
+background-position: top left;
+background-attachment: scroll;    position: absolute;
+background-repeat: : none;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    
+
+left: 10px;
+    
+
+top: 122px;
+}
+
+.react05 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react05 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react05 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 14px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 118px;
+    bottom: 137px;
+    color: white;
+    position: absolute;
+}
+
+.react05 .digital-clock.two {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 347px;
+    top: 154px;
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+.react05 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react05 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 06
+ ***************************************************/
+
+.react06 {
+
+}
+
+.react06 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 305px;
+    top: -15px;
+}
+
+.react06 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react06 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 7px;
+    top: 42px;
+}
+
+.react06 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 8px;
+    top: 117px;
+}
+
+.react06 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react06 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react06 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 346px;
+    top: 154px;
+    color: white;
+    position: absolute;
+}
+
+.react06 .digital-clock.two {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 329px;
+    top: 198px;
+    color: white;
+    position: absolute;
+    display: none; 
+}
+
+.react06 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react06 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 07
+ ***************************************************/
+
+.react07 {
+
+}
+
+.react07 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 8px;
+    top: 30px;
+}
+
+.react07 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;    
+}
+
+.react07 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 150px;
+    top: 115px;
+}
+
+.react07 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 37px;
+    top: 10px;
+}
+
+.react07 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0;
+}
+
+.react07 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react07 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 329px;
+    top: 198px;
+    color: white;
+    position: absolute; 
+}
+
+.react07 .digital-clock.two {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 11px;
+    top: 43px;
+    color: white;
+    position: absolute;
+    display: none;
+}
+
+.react07 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+.react07 .bg02 {
+    position: absolute;
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 08
+ ***************************************************/
+
+.react08 {
+
+}
+
+.react08 .analog-clock {
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 900;
+    right: 60px;
+    top: 10px;
+}
+
+.react08 .analog-clock .bg {
+    background-image: url('./img/clock.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 179px;
+    width: 179px;
+    z-index: 950;
+    left: 0;
+    top: 0;   
+}
+
+.react08 .analog-clock .indicador01 {
+    background-image: url('./img/indicador01.png');
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-clip: scroll;
+    position: absolute;
+    z-index: 955;
+    height: 24px;
+    width: 24px;
+    left: 97px;
+    top: 75px;
+}
+
+.react08 .analog-clock .indicador02 {
+    background-image: url('./img/indicador02.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-repeat: : none;
+    position: absolute;
+    z-index: 955;
+    height: 18px;
+    width: 18px;
+    left: 97px;
+    top: 75px;
+}
+
+.react08 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 179px;
+    width: 179px;
+    left: 0;
+    top: 0px;
+}
+
+.react08 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 122px;
+    width: 122px;
+    left: 30px;
+    top: 27px; 
+}
+
+.react08 .digital-clock.one {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 24px;
+    z-index: 950;
+    height: 35px;
+    width: 100px;
+    left: 11px;
+    top: 43px;
+    color: white;
+    position: absolute;
+}
+
+.react08 .bg01 {
+    position: absolute;
+    z-index: 510;
+    left: 0;
+    top: 0;
+}
+
+/****************************************************
+ *  REACTIVO 09
+ ***************************************************/
+
+.react09 .actividad {
+    background: white url('./img/react09/react09-bg.png') scroll no-repeat top left;
+}
+
+section.react09 .instrucciones {
+    padding: 10px 30px;
+    color: #FFFFFF;
+    height: 40px;
+}
+
+.react09 .analog-clock {
+    position: absolute;
+    height: 351.5px;
+    width: 190px;    
+    left: 120px;
+    top: 10px;
+}
+
+.react09 .analog-clock .bg {
+    background-image: url('./img/react09/cucu.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 330px;
+    width: 249px;    
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+.react09 .analog-clock .sensible {
+    position: absolute;
+    cursor: pointer;
+    display: block;    
+    z-index: 10000;
+    height: 70px;
+    width: 40px;
+    left: 105px;
+    top: 35px;
+}
+
+.react09 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 120px;
+    width: 120px;
+    left: 65px;
+    top: 111px;
+}
+
+.react09 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 66px;
+    width: 66px;
+    left: 92px;
+    top: 138px;
+}
+
+.react09 .analog-clock .pendulo {
+    position: absolute;
+    z-index: 500;
+    top: 130px;
+    left: 20px;
+}
+
+.react09 .digital-clock {
+    background-image: url('./img/react09/clock.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 153px;
+    width: 320px;    
+    z-index: 500;
+    right: 10px;
+    bottom: 25px;
+}
+
+.react09 .digital-clock .time {
+    font-family: 'ds-digital',sans-serif;
+    text-align: center;
+    font-size: 100px;
+    padding: 35px;
+}
+
+.react09 .reactivos {
+    background-image: url('./img/react09/bloque.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 86px;
+    width: 244px;    
+    z-index: 500;
+    top: 120px;    
+    left: 20px;
+}
+
+/****************************************************
+ *  REACTIVO 10
+ ***************************************************/
+
+.react10 .actividad {
+    background: white url('./img/react10/react10-bg.png') scroll no-repeat top left;
+}
+
+section.react10 .instrucciones {
+    padding: 10px 30px;
+    color: #FFFFFF;
+    height: 40px;
+}
+
+.react10 .analog-clock {
+    position: absolute;
+    height: 351.5px;
+    width: 190px;    
+    left: 120px;
+    top: 10px;
+}
+
+.react10 .analog-clock .bg {
+    background-image: url('./img/react09/cucu.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 330px;
+    width: 249px;    
+    z-index: 500;
+    left: 0;
+    top: 0;
+}
+
+.react10 .analog-clock .minute-hand {
+    position: absolute;
+    z-index: 970;
+    height: 120px;
+    width: 120px;
+    left: 65px;
+    top: 111px;
+}
+
+.react10 .analog-clock .hour-hand {
+    position: absolute;
+    z-index: 960;
+    height: 66px;
+    width: 66px;
+    left: 90px;
+    top: 137px;
+}
+
+.react10 .analog-clock .pendulo {
+    position: absolute;
+    z-index: 500;
+    top: 130px;
+    left: 20px;
+}
+
+.react10 .digital-clock {
+    background-image: url('./img/react10/clock.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 170px;
+    width: 320px;    
+    z-index: 500;
+    right: 10px;
+    bottom: 25px;
+}
+
+.react10 .digital-clock .time {
+    font-family: 'ds-digital',sans-serif;
+    position: absolute;
+    text-align: center;
+    font-size: 100px;
+    left: 65px;
+    top: 50px;
+}
+
+.react10 .digital-clock .sensible {
+    position: absolute;
+    cursor: pointer;
+    display: block;
+    z-index: 10000;
+    height: 50px;
+    width: 110px;
+    left: 105px;
+    top: -5px;
+}
+
+.react10 .digital-clock .up {
+    position: absolute;
+    top: 60px;
+    left: 30px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.react10 .digital-clock .down {
+    position: absolute;
+    top: 110px;
+    left: 30px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;    
+}
+
+.react10 .reactivos {
+    background-image: url('./img/react10/bloque.png');
+    background-position: top left;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    position: absolute;
+    height: 86px;
+    width: 244px;    
+    z-index: 500;
+    top: 120px;    
+    left: 20px;
+}

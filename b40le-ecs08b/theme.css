@@ -1,0 +1,830 @@
+/****************************************************
+ *  FONTS
+ ***************************************************/
+
+@font-face {
+    font-family: 'ds-digital';
+    src: url('./fonts/ds-digit-webfont.eot');
+    src: url('./fonts/ds-digit-webfont.eot?#iefix') format('embedded-opentype'),
+         url('./fonts/ds-digit-webfont.woff2') format('woff2'),
+         url('./fonts/ds-digit-webfont.woff') format('woff'),
+         url('./fonts/ds-digit-webfont.ttf') format('truetype'),
+         url('./fonts/ds-digit-webfont.svg#ds-digitalbold_italic') format('svg');
+    font-style: normal;
+    font-weight: bold;
+}
+
+/****************************************************
+ *  SECTIONS
+ ***************************************************/
+
+.blocker {
+  position: absolute;
+  background: transparent;
+  z-index: 10000;
+  height: 40px;
+  width: 40px;
+  left: 70px;
+  top: 71px;
+}
+
+.minute-hand {
+    cursor: -webkit-grab; cursor: -moz-grab; 
+    -moz-user-select: none; 
+    -khtml-user-select: none; 
+    -webkit-user-select: none; 
+    -o-user-select: none; 
+}
+
+section.reactivo .actividad {
+    
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+
+    position: absolute;
+    height: 373px;
+    width: 790px;
+    bottom: 46px;
+    left: 0;
+
+    font-family: 'Nexa Regular', sans-serif;
+    color:white;
+}
+
+/*
+.btn-siguiente {
+    background-image: url('./img/btn-bg.png');
+    font-family: 'Nexa Regular', sans-serif;
+    background-position: center center;
+    background-attachment: scroll;
+    background-color: transparent;    
+    background-repeat: no-repeat;
+    text-transform: lowercase;
+    text-align: center;
+    line-height: 23px;
+    cursor: pointer;
+    color: #1C180B;
+
+    position: absolute;
+    padding: 5px 10px;
+    z-index: 5000;
+    height: 24px;
+    bottom: 20px;
+    width: 90px;
+    right: 20px;
+}
+*/
+
+/****************************************************
+ *  REACTIVO 01
+ ***************************************************/
+section.reactivo.react01 .actividad {
+    background-image: url('./img/react01/bg.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF
+}
+
+.react01 .actividad .b-correo {
+	position:absolute;
+    width: 131px;
+	height: 138px;
+    z-index: 10;
+    left: 375px;
+    top: 100px;
+background: url(img/react01/correo.png) no-repeat center;
+}
+@keyframes anima_correo {
+	0% { transform: scale(1); }
+	10% { transform: scale(1.08); }
+	20% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1.08); }
+	70% { transform: scale(1); }
+	80% { transform: scale(1); }
+	90% { transform: scale(1.08); }
+	100% { transform: scale(1); }
+}
+.react01 .pulsa_correo {
+	animation-name: anima_correo;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.react01 .lg-back {
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 0px 0px 0px 0px;
+    position: absolute;
+    z-index: 12;
+    height: 433px;
+    width: 790px;
+    left: 0;
+	top:81px
+}
+.react01 .ventana-word {
+	position: absolute;
+    z-index: 13;
+	width: 706px;
+    height: 387px;
+    left: 42px;
+	top:104px;
+	background: url(img/react01/ventana-word.png) no-repeat center;
+}
+.react01 .ventana-word .b-close{
+	border: 2px solid white;
+    background-color: #000;
+    border-radius: 60px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 31px;
+    right: -15px;
+    top: -15px;
+	z-index: 16;
+}
+.react01 .ventana-word .b-audio, .react01 .ventana-word .b-audio-off {
+	position: absolute;
+    cursor: pointer;
+    top: 354px;
+	z-index: 16;
+}
+.react01 .ventana-word .b-audio {
+    right: 185px;
+}
+.react01 .ventana-word .b-audio-off {
+    right: 135px;
+}
+.react01 .ventana-word .caja-texto {
+	position: absolute;
+    z-index: 14;
+	width: 600px;
+    height: 265px;
+    left: 63px;
+    top: 70px;
+	overflow: scroll;
+}
+.react01 .ventana-word .caja-texto p {
+	font-family: 'Nexa Regular', sans-serif;
+	font-size: 12px;
+	text-align: justify;
+	line-height: 1.8;
+}
+.react01 .ventana-word .caja-texto p.Titulo {
+	font-size:16px;
+	font-weight: bold;
+	text-align: center;
+}
+.react01 .ventana-word .caja-texto p .cuando {
+	background-color: rgba(75,193,255,0.4);
+}
+.react01 .ventana-word .caja-texto p .donde {
+	background-color: rgba(255,215,0,0.4);
+}
+.react01 .ventana-word .caja-texto p .que {
+	background-color: rgba(162,255,0,0.4);
+}
+.react01 .ventana-word .caja-texto p .quien {
+	background-color: rgba(207,36,255,0.4);
+}
+.react01 .ventana-word .caja-texto p .porque {
+	background-color: rgba(214,214,214,1.00);
+}
+.react01 .ventana-word .caja-texto p.note {
+	font-size: 9px;
+}
+.react01 .ventana-word {
+	cursor: url('img/react01/react01-cursormarcador.png'), auto;	
+}
+.react01 .ventana-word .tooltip {
+    position: relative;
+    display: inline;
+}
+.react01 .ventana-word .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: #717171;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -20px;
+}
+.react01 .ventana-word .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -25px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #717171 transparent transparent transparent;
+}
+.react01 .ventana-word .tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+.react01-anima01 {
+	position: absolute;
+	top: 3px;
+    left: 272px;
+    height: 320px;
+    width: 394px;
+    background-image: url(img/react01/react01-anima01.png);
+}
+.react01 .lg-back, .react01 .ventana-word, .react01 .b-correo {
+	display:none;
+}
+
+/****************************************************
+ *  REACTIVO 02
+ ***************************************************/
+
+.react02 {
+
+}
+section.reactivo.react02 .actividad {
+    background-image: url('./img/react02/react02-mapa.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+	cursor: url(img/react02/react02-cursorhuella.png), auto;
+}
+.react02 .actividad .b-locate-parque, .react02 .actividad .b-locate-lotebaldio, .react02 .actividad .b-locate-espectacular, .react02 .actividad .b-locate-municipio {
+	position:absolute;
+    z-index: 10;
+	background: url(img/react02/react02-locate.png) no-repeat center;
+	cursor: url(img/react02/react02-cursorhuella.png), auto;
+	opacity: 0;
+	-webkit-transition: all .25s linear; -moz-transition: all .25s linear; -ms-transition: all .25s linear; -o-transition: all .25s linear; transition: all .25s linear;
+}
+.react02 .actividad .b-locate-parque {
+    width: 260px;
+    height: 100px;
+    left: 345px;
+    top: 10px;
+}
+.react02 .actividad .b-locate-lotebaldio {
+    width: 130px;
+    height: 130px;
+    left: 240px;
+    top: 150px;
+}
+.react02 .actividad .b-locate-espectacular {
+	background: url(img/react02/react02-play.png) no-repeat center;
+    width: 113px;
+    height: 95px;
+    left: 170px;
+    top: 15px;
+}
+.react02 .actividad .b-locate-municipio {
+    width: 140px;
+    height: 130px;
+    left: 7px;
+    top: 235px;
+    opacity: 1;
+    background-position: 70px 70px;
+	display: none;
+}
+.react02 .actividad .b-locate-parque:hover, .react02 .actividad .b-locate-lotebaldio:hover, .react02 .actividad .b-locate-espectacular:hover {
+	opacity: 1;
+}
+@keyframes anima_locate {
+	0% { transform: scale(1); }
+	10% { transform: scale(1.08); }
+	20% { transform: scale(1); }
+	30% { transform: scale(1); }
+	40% { transform: scale(1.08); }
+	50% { transform: scale(1); }
+	60% { transform: scale(1.08); }
+	70% { transform: scale(1); }
+	80% { transform: scale(1); }
+	90% { transform: scale(1.08); }
+	100% { transform: scale(1); }
+}
+.react02 .pulsa_locate {
+	animation-name: anima_locate;
+	animation-duration: 5000ms;
+	transform-origin:70% 70%;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+.react02 .actividad .personajesmapa {
+	position: absolute;
+	top:244px;
+	left:605px;
+    height: 70px;
+    width: 54px;
+    background-image: url(img/react02/personajesmapa_multiple.png);
+}
+
+/****************************************************
+ *  REACTIVO 03
+ ***************************************************/
+
+.react03 {
+
+}
+section.reactivo.react03 .actividad {
+    background-image: url('./img/react03/react03-parque.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.react03 .actividad .personajesparque {
+	position: absolute;
+	top: 174px;
+    left: 295px;
+    height: 191px;
+    width: 224px;
+	z-index:99;
+    background-image: url(img/react03/react03-personajes.png);
+	display: none;
+}
+.react03 .actividad .anciano {
+	position: absolute;
+	top: 190px;
+    left: 540px;
+    height: 126px;
+    width: 187px;
+	z-index:10;
+    background-image: url(img/react03/react03-anciano.png);
+}
+.react03 .actividad .nina {
+	position: absolute;
+	top: 128px;
+    left: 482px;
+    height: 56px;
+    width: 50px;
+	z-index:10;
+    background-image: url(img/react03/react03-nina.png);
+}
+.react03 .actividad .ninaperro {
+	position: absolute;
+	top: 210px;
+    left: 210px;
+    height: 91px;
+    width: 105px;
+	z-index:10;
+    background-image: url(img/react03/react03-ninaperro.png);
+}
+.react03 .actividad .nino {
+	position: absolute;
+	top: 130px;
+    left: 540px;
+    height: 53px;
+    width: 44px;
+	z-index:10;
+    background-image: url(img/react03/react03-nino.png);
+}
+.react03 .actividad .policia {
+	position: absolute;
+	top: 120px;
+    left: 44px;
+    height: 182px;
+    width: 115px;
+	z-index:10;
+    background-image: url(img/react03/react03-policia.png);
+}
+.react03 .actividad .senora {
+	position: absolute;
+	top: 94px;
+    left: 184px;
+    height: 111px;
+    width: 165px;
+	z-index:10;
+    background-image: url(img/react03/react03-senora.png);
+}
+.react03 .actividad .vagabundo {
+	position: absolute;
+	top: 160px;
+    left: 410px;
+    height: 139px;
+    width: 77px;
+	z-index:10;
+    background-image: url(img/react03/react03-vagabundo.png);
+}
+.react03 .actividad .anciano:hover, .react03 .actividad .nina:hover, .react03 .actividad .ninaperro:hover, .react03 .actividad .nino:hover, .react03 .actividad .policia:hover, .react03 .actividad .senora:hover, .react03 .actividad .vagabundo:hover {
+	cursor: url(img/react03/react03-microfono.png), auto;
+}
+.react03 .actividad .globo01, .react03 .actividad .globo02 {
+	position: absolute;
+	width: 232px;
+	height: 132px;
+	z-index: 12;
+	display: none;	
+}
+.react03 .actividad .globo01 {
+	background: url(img/react03/react03-globe01.png) no-repeat center;
+}
+.react03 .actividad .globo02 {
+	background: url(img/react03/react03-globe02.png) no-repeat center;
+}
+.react03 .actividad .globo01 p, .react03 .actividad .globo02 p {
+	font-size: 13px;
+    padding: 0 15px 5px 15px;
+    margin: 12px 0 0 0;
+}
+.react03 .actividad .g-anciano {
+	top: 90px;
+    left: 375px;	
+}
+.react03 .actividad .g-nino {
+	top: 20px;
+    left: 325px;
+}
+.react03 .actividad .g-senora {
+	top: 1px;
+    left: 5px;	
+}
+.react03 .actividad .g-vagabundo {
+	top: 70px;
+    left: 185px;	
+}
+.react03 .actividad .g-nina {
+	top: 10px;
+    left: 515px;	
+}
+.react03 .actividad .g-ninaperro {
+	top: 110px;
+    left: 275px;
+}
+.react03 .actividad .g-policia {
+	top: 21px;
+    left: 105px;
+}
+.react03 .actividad .b-optionA, .react03 .actividad .b-optionB {
+	position: absolute;
+	border-radius:4px;
+	border-bottom: 1px solid #6f8182;
+	background-color: #ffffff;
+	color:#837e87;
+	bottom: 37px;
+    padding: 2px 8px;
+    font-size: 14px;
+	cursor: pointer;
+}
+.react03 .actividad .b-optionA {
+    margin-left: 15px;
+    
+}
+.react03 .actividad .b-optionB {
+    right: 15px;
+}
+.react03 .actividad .b-ayuda-react03 {
+	position: absolute;
+	top: 325px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background-image: url(img/icono-ayuda.png);
+	cursor: pointer;
+}
+/****************************************************
+ *  REACTIVO 04
+ ***************************************************/
+
+.react04 {
+
+}
+section.reactivo.react04 .actividad {
+    background-image: url('img/react04/react04-lotebaldio.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.react04 .actividad .gato01, .react04 .actividad .gato02, .react04 .actividad .gato03, .react04 .actividad .gato04, .react04 .actividad .gato05, .react04 .actividad .gato06, .react04 .actividad .gato07, .react04 .actividad .gato08 {
+	position: absolute;
+	z-index: 10;
+}
+.react04 .actividad .gato01 {
+	width:82px;
+	height: 69px;
+	top: 22px;
+    left: 436px;
+	background: url(img/react04/react04-gato01.png) center;
+}
+.react04 .actividad .gato02 {
+	width:79px;
+	height: 59px;
+	top: 32px;
+    left: 257px;
+	background: url(img/react04/react04-gato02.png) center;
+}
+.react04 .actividad .gato03 {
+	width:54px;
+	height: 59px;
+	top: 160px;
+    left: 475px;
+	background: url(img/react04/react04-gato03.png) center;
+}
+.react04 .actividad .gato04 {
+	width:75px;
+	height: 94px;
+	top: 154px;
+    left: 195px;
+	background: url(img/react04/react04-gato04.png) center;
+}
+.react04 .actividad .gato05 {
+	width:58px;
+	height: 54px;
+	top: 233px;
+    left: 330px;
+	background: url(img/react04/react04-gato05.png) center;
+}
+.react04 .actividad .gato06 {
+	width:81px;
+	height: 85px;
+	top: 290px;
+    left: 550px;
+	background: url(img/react04/react04-gato06.png) center;
+}
+.react04 .actividad .gato07 {
+	width:109px;
+	height: 45px;
+	top: 315px;
+    left: 290px;
+	background: url(img/react04/react04-gato07.png) center;
+}
+.react04 .actividad .gato08 {
+	width:91px;
+	height: 76px;
+	top: 298px;
+    left: 51px;
+	background: url(img/react04/react04-gato08.png) center;
+}
+.react04 .actividad .personajeslote {
+	position:absolute;
+	z-index: 11;
+	width:166px;
+	height: 185px;
+	top: 187px;
+    left: 321px;
+	background: url(img/react04/react04-personajes.png) center;
+	display: none;
+}
+.react04 .actividad .camara {
+	position:absolute;
+	z-index: 11;
+	width:320px;
+	height: 232px;
+	top: 57px;
+    left: 321px;
+	cursor: move;
+	background: url(img/react04/react04-camara.png) center;
+	display: none;
+}
+.camara .globo03 {
+	position:absolute;
+	z-index: 12;
+	width:216px;
+	height: 100px;
+	top: 50px;
+    left: 70px;
+	background: url(img/react04/react04-globo.png) center;
+}
+.camara .globo03 p {
+	color: #3e3e42;
+    font-size: 12px;
+    padding: 12px 8px 5px 15px;
+    margin: 0;
+}
+.camara .obturador {
+	position:absolute;
+	z-index: 12;
+	width:72px;
+	height: 22px;
+	top: 21px;
+    left: 214px;
+	cursor: pointer;
+	background: url(img/react04/react04-obturador.png) center;
+}
+.react04 .actividad .b-ayuda-react04 {
+	position: absolute;
+	top: 325px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background-image: url(img/icono-ayuda.png);
+	cursor: pointer;
+}
+/****************************************************
+  REACTIVO 05
+ ***************************************************/
+
+.react05 {
+
+}
+section.reactivo.react05 .actividad {
+    background-image: url('img/react05/react05-municipio.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.react05 .actividad .b-ayuda-react05 {
+	position: absolute;
+	top: 325px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background-image: url(img/icono-ayuda.png);
+	cursor: pointer;
+}
+.react05-anima01 {
+	position: absolute;
+	top: 23px;
+    left: 306px;
+    height: 320px;
+    width: 394px;
+    background-image: url(img/react05/react05-anima01.png);
+}
+.react05 .lg-back {
+	background-color: rgba(0,0,0,0.5);
+    border-radius: 0px 0px 0px 0px;
+    position: absolute;
+    z-index: 12;
+    height: 433px;
+    width: 790px;
+    left: 0;
+	top:81px
+}
+.react05 .ventana-queja {
+	position: absolute;
+    z-index: 13;
+	width: 706px;
+    height: 388px;
+    left: 22px;
+	top:104px;
+	background: url(img/react05/react05-ventana-queja.png) no-repeat center;
+}
+.react05 .ventana-queja .b-close{
+	border: 2px solid white;
+    background-color: #000;
+    border-radius: 60px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 31px;
+    right: -15px;
+    top: -15px;
+	z-index: 16;
+}
+.react05 .ventana-queja .caja-texto {
+	position: absolute;
+    z-index: 14;
+	width: 640px;
+    height: 350px;
+    left: 27px;
+    top: 20px;
+	overflow: scroll;
+}
+.react05 .ventana-queja .caja-texto p {
+	font-family: 'Nexa Regular', sans-serif;
+	font-size: 14px;
+	text-align: justify;
+	line-height: 1.8;
+	cursor: move;
+	-webkit-user-select: none;  
+  -moz-user-select: none;    
+  -ms-user-select: none;      
+  user-select: none;
+}
+.react05 .react05-op01 {
+	text-align:right !important;
+	display: block !important;
+}
+.react05 .react05-op04, .react05 .react05-op05 {
+	display: inline !important;
+}
+.react05 .react05-op11 {
+	text-align:center !important;
+	font-weight: bold;
+}
+.react05 .actividad .b-mano {
+	position: absolute;
+	top: 60px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background: url(img/react05/react05-mano.png) center;
+	cursor: pointer;
+}
+.react05 .actividad .b-goma {
+	position: absolute;
+	top: 110px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background: url(img/react05/react05-goma.png) center;
+	cursor: pointer;
+}
+.react05 .actividad .b-entregar {
+	position: absolute;
+	top: 160px;
+    left: 740px;
+    height: 40px;
+    width: 40px;
+	z-index:99;
+    background: url(img/react05/react05-entregar.png) center;
+	cursor: pointer;
+}
+.option-text {
+	font-family: 'Nexa Regular', sans-serif;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 1.8;
+    width: auto;
+    display: inline;
+    padding: 0 10px;
+}
+.react05 .lg-back, .react05 .ventana-queja, .react05 .actividad .b-mano, .react05 .actividad .b-goma, .react05 .actividad .b-entregar  {
+	display:none;
+}
+
+/****************************************************
+ *  REACTIVO 06
+ ***************************************************/
+
+.react06 {
+
+}
+section.reactivo.react06 .actividad {
+    background-image: url('img/react06/react06-video.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+.react06 .actividad .video01 {
+    margin: 14px 104px;
+}
+.react06 .actividad .b-close{
+	border: 2px solid white;
+    background-color: #000;
+    border-radius: 60px;
+    font-family: Arial;
+    text-align: center;
+    font-weight: bold;
+    font-size: 23px;
+    color: white;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    cursor: pointer;
+    line-height: 31px;
+    right: 25px;
+    top: 15px;
+	z-index: 16;
+}
+
+/****************************************************
+ *  REACTIVO 07
+ ***************************************************/
+
+.react07 {
+
+}
+section.reactivo.react07 .actividad {
+    background-image: url('img/react07/react07-final.png');
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+}
+
+/****************************************************
+ *  REACTIVO 08
+ ***************************************************/
+
+.react08 {
+
+}

@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+<head>
+<title>Santillana</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link type="text/css" rel="stylesheet" href="estilo-global.css">
+<link type="text/css" rel="stylesheet" href="modal.css">
+<link type="text/css" rel="stylesheet" href="theme.css">
+<script src="js/jquery-1.11.2.min.js" type="text/javascript"></script>
+<script src="js/jquery-ui.min.js" type="text/javascript"></script>
+<script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+<script src="js/jquery.animateSprite.min.js" type="text/javascript"></script>
+<script src="js/TweenMax.min.js" type="text/javascript"></script>
+<script src="js/propeller.min.js" type="text/javascript"></script>
+<script src="js/buzz.min.js" type="text/javascript"></script>
+<script src="js/config.js" type="text/javascript"></script>
+<script src="js/modal.js" type="text/javascript"></script>
+<script src="js/clock.js" type="text/javascript"></script>
+<script src="js/app.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/punch.js"></script>
+
+<!--<script src="js/videojs.js" type="text/javascript"></script>-->
+<script type="text/javascript" src="punch.js"></script>
+</head>
+
+<body>
+<div id="all">
+  <div id="Encabezado"></div>
+  <div id="Instruccion">
+    <div id="txt_Inst"></div>
+  </div>
+  
+  <!-- REACTIVO 01 -->
+  
+  <section class="reactivo react01" id="reactivo01">
+    <div class="instrucciones">Elige un escenario.</div>
+    <div class="actividad" id="actividad">
+      <div id="montana" class="b-montana lugar-activo"></div>
+      <div id="cueva" class="b-cueva cursor-locked"></div>
+      <div id="bosque" class="b-bosque lugar-activo"></div>
+      <div id="palacio" class="b-palacio cursor-locked"></div>
+      <div class="react01-escenario-sobre"></div>
+      <div class="personajesmapa"></div>
+      <div class="b-unlock"></div>
+    </div>
+  </section>
+  
+  <!-- REACTIVO 02 -->
+  
+  <section class="reactivo react02" id="reactivo02">
+    <div class="instrucciones">Determina si los versos tienen un sentido literal o figurado.</div>
+    <div class="actividad">
+      <div class="b-maestro"></div>
+      <div class="react02-samurai"></div>
+      <div class="b-estrella"></div>
+      <div class="b-espada"></div>
+      <div class="llamita01"></div>
+      <div class="llamita02"></div>
+      <div class="llamita03"></div>
+      <div class="fantasma01 pulsa_fantasma">
+        <div class="globo">
+          <p>Si de mí dependiera, Rizos de Oro<br/>
+            Estaría tras las rejas como un loro.<br/>
+            Roald Dahl</p>
+        </div>
+      </div>
+      <div class="fantasma02 pulsa_fantasma">
+        <div class="globo">
+          <p>El viento es un caballo: <br/>
+            óyelo cómo corre <br/>
+            por el mar, por el cielo.<br/>
+            Pablo Neruda</p>
+        </div>
+      </div>
+      <div class="fantasma03 pulsa_fantasma">
+        <div class="globo">
+          <p>Unos caballos blancos<br/>
+            que nunca tuvieron amos.<br/>
+            Sobre arenas de los mares <br/>
+            los caballos galoparon. <br/>
+            Carmen Conde</p>
+        </div>
+      </div>
+      <div class="fantasma04 pulsa_fantasma">
+        <div class="globo">
+          <p>Comenzó el tiempo de las lluvias<br/>
+            y los hombres comenzaron a trabajar.<br/>
+            Alfredo Ramírez</p>
+        </div>
+      </div>
+      <div class="fantasma05 pulsa_fantasma">
+        <div class="globo">
+          <p>Árbol de sangre, el hombre siente, piensa, florece<br/>
+            Y da frutos insólitos: palabras. <br/>
+            Octavio Paz</p>
+        </div>
+      </div>
+      <div class="fantasma06 pulsa_fantasma">
+        <div class="globo">
+          <p>La luna es araña de plata <br/>
+            que tiende su telaraña <br/>
+            en el río que la retrata<br/>
+            José Juan Tablada</p>
+        </div>
+      </div>
+      <div class="react02-escenario-left"></div>
+      <div class="react02-escenario-right"></div>
+    </div>
+  </section>
+  
+  <!-- REACTIVO 03 -->
+  
+  <section class="reactivo react03" id="reactivo03">
+    <div class="instrucciones">Elige el sentimiento que evoca el poema.</div>
+    <div class="actividad">
+      <div class="b-maestro"></div>
+      <div class="react03-samurai"></div>
+      <div class="llamita01"></div>
+      <div class="llamita02"></div>
+      <div class="monstruo01"></div>
+      <div class="monstruo02"></div>
+      <div class="caja-botonera">
+        <div id="btn-audio" class="botones b-audio"></div>
+        <div id="btn-nostalgia" class="botones cara-nostalgica"></div>
+        <div id="btn-tristeza" class="botones cara-llorando"></div>
+        <div id="btn-alegria" class="botones cara-alegre"></div>
+        <div id="btn-enojo" class="botones cara-enojada"></div>
+        <div id="btn-miedo" class="botones cara-sorprendida"></div>
+      </div>
+      <div class="globo" id="globo">
+        <p>Dos niños, ramas de un mismo árbol de miseria,<br/>
+          juntos en un portal bajo la noche calurosa,<br/>
+          dos niños pordioseros llenos de pústulas,<br/>
+          comen de un mismo plato como perros hambrientos […]<br/>
+          Nicolás Guillén<br/>
+          chalalalalala </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- REACTIVO 04 -->
+  
+  <section class="reactivo react04" id="reactivo04">
+    <div class="instrucciones">Elige la opción que mejor describa el sentido de la palabra. Determina si tiene sentido literal o figurado.</div>
+    <div class="actividad">
+      <div class="shogun"></div>
+      <div class="b-maestro"></div>
+      <div class="react04-samurai"></div>
+      <div class="b-estrella"></div>
+      <div class="b-espada"></div>
+      <div class="llamita01"></div>
+      <div class="llamita02"></div>
+      <div class="llamita03"></div>
+      <div class="tableros">
+        <div class="tablero" id="tablero1" data-val="1">
+          <p>Dar rodeos sin hablar del asunto.</p>
+        </div>
+        <div class="tablero" id="tablero2" data-val="2">
+          <p>Parte de una ciencia.</p>
+        </div>
+        <div class="tablero" id="tablero3" data-val="3">
+          <p>Cada una de las partes que nacen del tallo de una planta.</p>
+        </div>
+      </div>
+      <div class="globo">
+        <p>Entre todas las rutas a mi alcance<br/>
+          elegí siempre andarme por las <span class="opcion">ramas:</span><br/>
+          gran frescura, gran vista, gran emoción […]<br/>
+          José Emilio Pacheco<br/>
+          chalal ala alala aa<br/>
+          chalal ala alala aa </p>
+      </div>
+    </div>
+  </section>
+  
+  <!-- REACTIVO 05 -->
+  
+  <section class="reactivo react05" id="reactivo05">
+    <div class="instrucciones">Pide una explicación al maestro.</div>
+    <div class="actividad"> 
+    <div id="cerrar-video" class="b-close"><img src="img/close.png" width="20" height="20" alt=""/></div>
+      <video width="580" controls class="video01">
+        <source src="video/react05/react05-video01.mp4" type="video/mp4">
+      </video>
+    <div class="react05-maestro"></div>
+		<div class="react05-samurai"></div>
+   
+    </div>
+  </section>
+  
+  <!-- REACTIVO 06 -->
+  
+  <section class="reactivo react06" id="reactivo06">
+    <div class="instrucciones">6- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="actividad"> </div>
+  </section>
+  
+  <!-- REACTIVO 07 -->
+  
+  <section class="reactivo react07" id="reactivo07">
+    <div class="instrucciones">7- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="actividad"> </div>
+  </section>
+  
+  <!-- REACTIVO 08 -->
+  
+  <section class="reactivo react08" id="reactivo08">
+    <div class="instrucciones">8- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="actividad"> </div>
+  </section>
+  
+  <!-- REACTIVO 09 -->
+  
+  <section class="reactivo react09" id="reactivo09">
+    <div class="instrucciones">9- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="actividad"> </div>
+  </section>
+  
+  <!-- REACTIVO 10 -->
+  
+  <section class="reactivo react10" id="reactivo10">
+    <div class="instrucciones">10- Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+    <div class="actividad"> </div>
+  </section>
+  
+  <!-- FIN DE REACTIVOS -->
+  <div id="botonera">
+    <div class="container"> <a href="index.html">
+      <div id="homeBtn"></div>
+      </a> <a href="1.html">
+      <div id="restartBtn"></div>
+      </a>
+      <!--<div class="btn-siguiente" id="avanzaBtn"></div>-->
+    </div>
+  </div>
+  <div class="modal">
+    <div class="content">
+      <div class="close-modal"><img src="./img/close.png" alt="cerrar"></div>
+      <div class="container">este es un ejemplo de contenido</div>
+    </div>
+    <div class="screen"></div>
+  </div>
+</div>
+<audio id="FlexAudio" />
+</body>
+</html>
